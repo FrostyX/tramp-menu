@@ -1,0 +1,30 @@
+#+TITLE: M-x tramp-menu
+
+** Installation
+
+The package is not available in MELPA yet.
+
+#+BEGIN_SRC emacs-lisp
+(use-package tramp-menu
+  :quelpa (tramp-menu
+           :fetcher github
+           :repo "FrostyX/tramp-menu"))
+#+END_SRC
+
+** Configuration
+
+The ~M-x tramp-menu~ commands works out of the box without any additional
+configuration required. However some options are customizable.
+
+#+BEGIN_SRC emacs-lisp
+(setq tramp-menu-shell #'vterm)
+#+END_SRC
+
+If you want to configure a user, proxy settings or any other SSH option,
+configure your ~$HOME/.ssh/config~.
+
+** Alternatives
+
+- [[https://github.com/masasam/emacs-helm-tramp][emacs-helm-tramp]]
+- [[https://github.com/charmitro/emacs-ssh-machines][emacs-ssh-machines]]
+- [[https://github.com/rlupton20/mushu][mushu]]
