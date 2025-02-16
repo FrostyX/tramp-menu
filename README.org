@@ -16,12 +16,22 @@ The package is not available in MELPA yet.
 The ~M-x tramp-menu~ commands works out of the box without any additional
 configuration required. However some options are customizable.
 
+What shell should be opened on the remote machine?
+
 #+BEGIN_SRC emacs-lisp
 (setq tramp-menu-shell #'vterm)
 #+END_SRC
 
+The default option is ~#'shell~ but other interesting choices are ~#'eshell~,
+~#'vterm~, ~#'eat~ or ~#'dired-jump~.
+
 If you want to configure a user, proxy settings or any other SSH option,
-configure your ~$HOME/.ssh/config~.
+configure your ~$HOME/.ssh/config~. For example:
+
+#+BEGIN_SRC conf
+Host abathur
+    User frostyx
+#+END_SRC
 
 ** Alternatives
 
