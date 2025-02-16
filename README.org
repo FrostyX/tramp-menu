@@ -1,5 +1,10 @@
 #+TITLE: M-x tramp-menu
 
+This package shows completion with all known SSH hosts and connects to the
+selected one through TRAMP. The advantage over the built-in Emacs functionality
+is that you don't have to ~C-x C-f~ which Evil users are not used to, and you
+don't have to remember the remote file syntax: ~/ssh:user@host:/path/to/file~.
+
 ** Installation
 
 The package is not available in MELPA yet.
