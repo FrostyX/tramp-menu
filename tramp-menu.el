@@ -80,7 +80,7 @@
    (mapcar
     (lambda (x)
       (unless (string-prefix-p "#" x)
-        (split-string (first (string-split x)) ",")))
+        (split-string (car (string-split x)) ",")))
     (tramp-menu-known-hosts))))
 
 (defun tramp-menu--completing-read (hosts)
